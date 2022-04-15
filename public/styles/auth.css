@@ -1,0 +1,30 @@
+h1  {
+    text-align: center;
+    color: var(--color-gray-900);
+}
+
+form {
+    max-width: 25rem;
+    margin: var(--space-8) auto;
+    padding: var(--space-4);
+    background-color: var(--color-gray-300);
+    border-radius: var(--border-radius-medium);
+    text-align: center;
+}
+
+form a {
+    padding: var(--space-2) var(--space-6);
+    cursor: pointer;
+    font: inherit;
+    background-color: var(--color-gray-600);
+    color: var(--color-white-900);
+    font-weight: 500;
+    border: 1px solid var(--color-gray-600);
+    border-radius: var(--border-radius-small);
+}
+
+form a:hover,
+form a:active {
+    background-color: var(--color-grey-600);
+    border-color: var(--color-grey-600);
+}

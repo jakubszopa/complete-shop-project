@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+
+    --primary-font: 'Zilla Slab', sans-serif;
+    --second-primary-font: 'Arvo', serif;
+    --special-font: 'Playfair Display', serif;
+    --pretty-font: 'Lobster', cursive;
+
+    --color-primary-500: rgb(39,27,18);
+
+    --color-gray-900: rgb(46, 46, 46);
+    --color-gray-800: rgb(68, 34, 34);
+    --color-gray-750: rgb(70, 70, 70);
+    --color-gray-700: rgb(158, 158, 158);
+    --color-grey-600: rgb(167, 167, 167);
+    --color-gray-500: rgb(194, 181, 181);
+    --color-gray-400: rgb(197, 168, 168);
+    --color-gray-300: rgb(196, 196, 196);
+    --color-gray-200: rgb(209, 209, 209);
+    --color-gray-100: rgb(226, 226, 226);
+    
+    --color-error-100: rgb(124, 30, 30);
+
+    --color-white-900: rgb(255, 255, 255);
+
+    --color-black-100: rgb(5, 5, 5);
+
+    --color-red-300: rgb(163, 18, 18);
+
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-4: 1rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+
+    --border-radius-small: 4px;
+    --border-radius-medium: 6px;
+
+    --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+    font-family: var(--primary-font);
+}
+
+body {
+    background-color: var(--color-white-900);
+    color: var(--color-black-100);
+    margin: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+ul, 
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black-100);
+}
+
+.btn {
+    padding: var(--space-2) var(--space-6);
+    cursor: pointer;
+    font: inherit;
+    background-color: var(--color-gray-800);
+    color: var(--color-white-900);
+    font-weight: 500;
+    border: 1px solid var(--color-gray-800);
+    border-radius: var(--border-radius-small);
+}
+
+.btn:hover,
+.btn:active {
+    background-color: var(--color-gray-750);
+    border-color: var(--color-gray-750);
+}
+
+.btn-alt {
+    background-color: transparent;
+    color: var(--color-gray-800);
+}
+
+.btn-alt:hover,
+.btn-alt:active {
+    background-color: var(--color-gray-200);
+}
+
+.alert {
+    border-radius: var(--border-radius-small);
+    background-color: var(--color-error-100);
+    padding: var(--space-4);
+    color: var(--color-white-900);
+}
+
+.alert h2 {
+    font-size: 1rem;
+    margin: var(--space-2) 0;
+    text-transform: uppercase;
+}
+
+.alert p {
+    margin: var(--space-2) 0;
+}
+
+.badge {
+    margin-left: var(--space-2);
+    padding: 0.15rem var(--space-4);
+    border-radius: 10rem;
+    background-color: var(--color-gray-800);
+    color: var(--color-white-900);
+}
